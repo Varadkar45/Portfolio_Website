@@ -265,7 +265,7 @@ main::-webkit-scrollbar{
   margin-bottom: 1rem;
 }
 
-.contactForm, .FindMe{
+.contactForm, .FindMe, .workexperience{
   margin: 2rem;
   width: calc(100% - 4rem);
   background-color: rgb(255 255 255 / 31%);
