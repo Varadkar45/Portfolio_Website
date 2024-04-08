@@ -26,7 +26,10 @@
         src='./images/avatar.jpg'/>
         <div class='herosectionDetails'>
           <h2>Shreyas Varadkar</h2>
-          <h5>Studied at Pillai College Of Engineering, New Panvel</h5>
+          <div>I am a Passionate in<br> <span id="element"></span></div>
+          <div class="buttons">
+            <button class="btn_1" onClick="downloadResume()">Download Resume</button>
+        </div>
         </div>
       </section>
       <section class='aboutMe' id='aboutMe'>
@@ -128,6 +131,22 @@
 
     </main>
 
-    <script src="script.js"></script>
+        <!-- Load library from the CDN -->
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js">
+        </script>
+    
+        <!-- Setup and start animation! -->
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['Machine Learning', 'Web Development', 'Data Science'],
+                typeSpeed: 60,
+            });
+    
+            function downloadResume() {
+            const resumeURL = 'https://drive.google.com/file/d/1nybY6OSd9PoFzo2SzmCvvstnQpz_Jdrc/view?usp=sharing';
+            window.open(resumeURL, '_blank');
+        }
+    
+        </script>
   </body>
 </html>
