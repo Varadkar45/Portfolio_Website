@@ -92,7 +92,7 @@ main::-webkit-scrollbar{
   padding: 15px 0;
 }
 /* for displaying image on the left */
-/* .container left {
+.container right {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -110,10 +110,10 @@ main::-webkit-scrollbar{
 }
 
 .company-logo {
-  height: 60px;
+  height: 80px;
   width: 120px;
-  margin-right: 10px;
-} */
+  margin-right: 20px;
+}
 
 /* for displaying image on the right */
 .container left { 
@@ -134,8 +134,14 @@ main::-webkit-scrollbar{
   margin-bottom: 10px;
 }
 
-.company-logo {
-  height: 60px;
+.company-logo-zummit {
+  height: 70px;
+  width: 139px;
+  margin-left: 10px;
+}
+
+.company-logo-codeclause {
+  height: 65px;
   width: 139px;
   margin-left: 10px;
 }
