@@ -82,6 +82,7 @@ main {
   font-weight: 500;
   padding: 1rem 1rem 2rem 1rem;
   overflow: auto;
+  
 }
 
 main::-webkit-scrollbar{
@@ -91,6 +92,34 @@ main::-webkit-scrollbar{
 .buttons {
   padding: 15px 0;
 }
+
+/* footer css */
+footer {
+  background-color: rgba(255, 255, 255, 0.31);
+  border: 1px solid rgba(255, 255, 255, 0.31);
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+  align-self: center;
+}
+
+footer p {
+  margin: 0.2rem 0;
+}
+
+footer a {
+  color: blue;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 /* for displaying image on the left */
 .container right {
   display: flex;
@@ -495,6 +524,8 @@ strong {
   font-size: 15px;
 }
 
+
+
 @media only screen and (max-width: 460px){
 
   .profileImage{
@@ -516,6 +547,8 @@ strong {
     margin: 0;
     font-weight: 400;
   }
+
+
 
 
 
