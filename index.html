@@ -8,6 +8,12 @@
   </head>
   
   <body>
+    <!-- preloader section -->
+    <div class="preloader">
+	      <div class="sk-spinner sk-spinner-wordpress">
+          <span class="sk-inner-circle"></span>
+        </div>
+    </div>
     <main class="main">
       <nav class='navBar'>
         <h3>Shreyas Varadkar's Portfolio</h3>
@@ -212,6 +218,11 @@
             const resumeURL = 'https://drive.google.com/file/d/1KIG9BiFRZM_xkJRY2FAiYiQxzL0VpZ6d/view?usp=sharing';
             window.open(resumeURL, '_blank');
         }
+
+        window.addEventListener('load', function () {
+            const preloader = document.querySelector('.preloader');
+            preloader.style.display = 'none';
+        });
     
         </script>
   </body>
