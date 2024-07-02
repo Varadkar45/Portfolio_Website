@@ -209,20 +209,21 @@
     
         <!-- Setup and start animation! -->
         <script>
-            var typed = new Typed('#element', {
-                strings: ['Machine Learning', 'Full Stack Development', 'Data Science',],
-                typeSpeed: 60,
-            });
-    
-            function downloadResume() {
-            const resumeURL = 'https://drive.google.com/file/d/1KIG9BiFRZM_xkJRY2FAiYiQxzL0VpZ6d/view?usp=sharing';
-            window.open(resumeURL, '_blank');
-        }
 
         window.addEventListener('load', function () {
             const preloader = document.querySelector('.preloader');
             preloader.style.display = 'none';
+
+            var typed = new Typed('#element', {
+                strings: ['Machine Learning', 'Full Stack Development', 'Data Science',],
+                typeSpeed: 60,
+            });
         });
+
+        function downloadResume() {
+            const resumeURL = 'https://drive.google.com/file/d/1KIG9BiFRZM_xkJRY2FAiYiQxzL0VpZ6d/view?usp=sharing';
+            window.open(resumeURL, '_blank');
+        }
     
         </script>
   </body>
