@@ -3,257 +3,519 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Portfolio</title>
+    <title>Shreyas Varadkar | AI Engineer</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   
   <body>
     <!-- preloader section -->
     <div class="preloader">
-	      <div class="sk-spinner sk-spinner-wordpress">
-          <span class="sk-inner-circle"></span>
-        </div>
+      <div class="loader-ring"></div>
+      <div class="loader-text">Loading...</div>
     </div>
+
+    <!-- Animated background particles -->
+    <div class="particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+
     <main class="main">
       <nav class='navBar'>
-        <h3>Shreyas Varadkar's Portfolio</h3>
-        <div class='navigationMenu'>
-          <a href="#aboutMe">About Me</a>
-          <a href="#workexperience">Work Exposure</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contactForm">Let's Connect!</a>
-          <a href="#FindMe">Find Me</a>
-        <div>
-      </nav>
-      <section class='heroSection'>
-        <img 
-        class='profileImage'
-        src='https://github.com/KaranP666/KaranP666/assets/83541879/ec7a0c4a-3386-4c8a-b98b-810fc31b9fc7'/>
-        <div class='herosectionDetails'>
-          <h2>Shreyas Varadkar</h2>
-          <div>I am a Passionate in<br> <span id="element"></span></div>
-          <div class="buttons">
-            <button class="btn_1" onClick="downloadResume()">Download Resume</button>
+        <div class="nav-brand">
+          <span class="brand-bracket">&lt;</span>
+          <span class="brand-name">SV</span>
+          <span class="brand-bracket">/&gt;</span>
         </div>
+        <div class='navigationMenu'>
+          <a href="#aboutMe" class="nav-link">About</a>
+          <a href="#workexperience" class="nav-link">Experience</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contactForm" class="nav-link">Contact</a>
+        </div>
+      </nav>
+
+      <section class='heroSection'>
+        <div class="hero-content">
+          <div class="hero-greeting">Hi, I'm</div>
+          <h1 class="hero-name">Shreyas Varadkar</h1>
+          <h2 class="hero-title">AI Engineer & Full Stack Developer</h2>
+          <div class="hero-subtitle">
+            I specialize in <span id="element" class="typed-text"></span>
+          </div>
+          <div class="hero-description">
+            Building intelligent systems and scalable solutions at the intersection of AI and software engineering.
+          </div>
+          <div class="buttons">
+            <button class="btn-primary" onClick="downloadResume()">
+              <span>Download Resume</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+              </svg>
+            </button>
+            <a href="#contactForm" class="btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="image-border"></div>
+          <div class="image-container">
+            <img class='profileImage' src='https://github.com/KaranP666/KaranP666/assets/83541879/ec7a0c4a-3386-4c8a-b98b-810fc31b9fc7'/>
+          </div>
         </div>
       </section>
+
       <section class='aboutMe' id='aboutMe'>
-        <h2>Who am I...</h2>
-        <p>Hello, I'm Shreyas Varadkar, a fresh B.Tech graduate in Computer Engineering with a specialization in Data Analytics and Natural Language Processing from Pillai College of Engineering (PCE), New Panvel. I'm an enthusiastic and ambitious undergraduate with a strong interest in Data Science, Machine Learning, and Artificial Intelligence. With nearly one year of hands-on work experience in Data Science, combined with my strong academic background and a B.Tech Degree in Computer Science, I'm actively seeking opportunities that allow me to apply my skills and educational background for the betterment of both organizations and personal growth. I always strive to improve myself, add value to the assigned work, and passionate about learning new technologies. I enjoy working in teams because you learn more and more quickly. As the proverb goes, "two heads are better than one." </p>
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+          <p>Hello, I'm Shreyas Varadkar, a fresh B.Tech graduate in Computer Engineering with a specialization in Data Analytics and Natural Language Processing from Pillai College of Engineering (PCE), New Panvel.</p>
+          <p>I'm an enthusiastic and ambitious undergraduate with a strong interest in Data Science, Machine Learning, and Artificial Intelligence. With nearly one year of hands-on work experience in Data Science, combined with my strong academic background and a B.Tech Degree in Computer Science, I'm actively seeking opportunities that allow me to apply my skills and educational background for the betterment of both organizations and personal growth.</p>
+          <p>I always strive to improve myself, add value to the assigned work, and passionate about learning new technologies. I enjoy working in teams because you learn more and more quickly. As the proverb goes, "two heads are better than one."</p>
+        </div>
       </section>
       
       <section class='workexperience' id='workexperience'>
-        <h1 class='workexposure'>Work Exposure</h1>
+        <div class="section-header">
+          <h2 class="section-title">Work Experience</h2>
+          <div class="section-line"></div>
+        </div>
         <div class="timeline">
-            <div class="container left">
-                <div class="content">
-                  <div class="text-image-wrapper">
-                    <div>
-                        <strong>SDE(AI)</strong><br>
-                        <p>Amplispot, Mumbai</p>
-                        <i>(May 2025 - Present)</i>
-                    </div>
-                    <img class="company-logo-zummit" src="./images/Amplispot.png" alt="zummit">
-                </div>
-                    <!-- <p>- Worked on migrating ML workflows of an ”HR interview bot” project enhancing automated detection of candidate’s nervousness and confidence based on displayed emotions.</p>
-                    <p>- Led the Third Eye project, which aims to build AI-powered spectacles to assist visually impaired people where I optimized object detection using YoloV8, achieving a 20% accuracy boost.</p>
-                    <p>- Technologies used: Python, Machine Learning, Data Science, Deep Learning, Tensorflow, Pytorch, Keras, LLM's</p> -->
-                    <p>Led AI initiatives at Amplispot, building AI automation frameworks and RAG-based chatbots to optimize workflows.</p>
-                    <p>- Designed and deployed an AI Service Framework in NestJS with Keycloak-based authentication and Kubernetes deployment, improving scalability and security across internal AI tools.</p>
-                    <p>- Developed RAG chatbots improving contextual accuracy and reducing hallucinations by ~40%.</p>
-                    <p>- Built a bilingual (English & Hindi) voice-based conversational AI bot for the insurance domain using ElevenLabs, Express, and HTML, enabling interactive voice journeys and personalized plan suggestions.</p>
-                    <p>-Technologies used: Python, NestJS, NodeJS, LangChain, n8n, Ollama, Mistral, OpenAI, PGVector, Postgres, Docker, Kubernetes, Keycloak, ElevenLabs, Express.js, HTML</p>
-                  </div>
-            </div>
-            <div class="container right">
-                <div class="content">
-                  <div class="text-image-wrapper">
-                    <div>
-                        <strong>Junior Data Scientist</strong><br>
-                        <p>Zummit Infolabs, Bangalore</p>
-                        <i>(Nov 2023 - Aug 2024)</i>
-                    </div>
-                    <img class="company-logo-zummit" src="./images/zummit.png" alt="zummit">
-                </div>
-                    <p>- Worked on migrating ML workflows of an ”HR interview bot” project enhancing automated detection of candidate’s nervousness and confidence based on displayed emotions.</p>
-                    <p>- Led the Third Eye project, which aims to build AI-powered spectacles to assist visually impaired people where I optimized object detection using YoloV8, achieving a 20% accuracy boost.</p>
-                    <p>- Technologies used: Python, Machine Learning, Data Science, Deep Learning, Tensorflow, Pytorch, Keras, LLM's</p>
-                </div>
-            </div>
-            <div class="container left">
-              <div class="content">
-                <div class="image-text-wrapper">
-                  <img class="company-logo" src="./images/amazon.svg" alt="amazon">
-                  <div>
-                    <strong>ML Trainee - Amazon ML Summer School</strong><br>
-                    <p>Amazon</p>
-                    <i>(Sept 2023 - Oct 2023)</i>
-                  </div>
-              </div>
-                  <p>- Secured a position among the top 3000 nationwide, gaining invaluable exposure to state-of-the-art Machine Learning applications.</p>
-                  <p>- Engaged in intensive workshops and training sessions conducted by accomplished data scientists currently working at Amazon</p>
-              </div>
-          </div>
-            <div class="container right">
-                <div class="content">
-                  <div class="text-image-wrapper">
-                    <div>
-                      <strong>Data Science Intern</strong><br>
-                      <p>Codeclause, Pune</p>
-                      <i>(Jan 2023 - Feb 2023)</i>
-                    </div>
-                    <img class="company-logo-codeclause" src="./images/codeclause.png" alt="codeclause">
-                </div>
-                    <p>- Developed a Machine Learning powered solution for predicting Churn in Telecom Industry to identify patterns and various trends that influence customer satisfaction and helps to reduce churn in telecom.</p>
-                    <p>- Technologies used: Python, Machine Learning, Data Science</p>
-                </div>
-            </div>
-            <div class="container left">
-                <div class="content">
-                  <div class="image-text-wrapper">
-                    <img class="company-logo" src="./images/mica.png" alt="mica">
-                    <div>
-                      <strong>Internship Trainee</strong><br>
-                      <p>Marine Industrial Control & Automation Labs, Belapur CBD</p>
-                      <i>(Jun 2020 - Jul 2020)</i>
-                    </div>
-                </div>
-                    <p>- Acquired comprehensive training in Python Programming and MySQL Database, skillfully applying them in a collaborative group project titled 'Database Queries'.</p>
-                    <p>- Technologies used: Python, MySQL Database</p>
-                </div>
-            </div>
-            
-        </div>
+          <div class="timeline-line"></div>
           
-        </section>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-title-wrapper">
+                  <h3 class="timeline-role">SDE(AI)</h3>
+                  <span class="timeline-company">Amplispot, Mumbai</span>
+                </div>
+                <div class="company-logo-wrapper">
+                  <img class="company-logo" src="./images/Amplispot.png" alt="Amplispot">
+                </div>
+              </div>
+              <div class="timeline-date">May 2025 - Present</div>
+              <div class="timeline-description">
+                <p>Led AI initiatives at Amplispot, building AI automation frameworks and RAG-based chatbots to optimize workflows.</p>
+                <ul>
+                  <li>Designed and deployed an AI Service Framework in NestJS with Keycloak-based authentication and Kubernetes deployment, improving scalability and security across internal AI tools.</li>
+                  <li>Developed RAG chatbots improving contextual accuracy and reducing hallucinations by ~40%.</li>
+                  <li>Built a bilingual (English & Hindi) voice-based conversational AI bot for the insurance domain using ElevenLabs, Express, and HTML, enabling interactive voice journeys and personalized plan suggestions.</li>
+                </ul>
+                <div class="tech-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">NestJS</span>
+                  <span class="tech-tag">LangChain</span>
+                  <span class="tech-tag">n8n</span>
+                  <span class="tech-tag">Ollama</span>
+                  <span class="tech-tag">OpenAI</span>
+                  <span class="tech-tag">Docker</span>
+                  <span class="tech-tag">Kubernetes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-title-wrapper">
+                  <h3 class="timeline-role">Junior Data Scientist</h3>
+                  <span class="timeline-company">Zummit Infolabs, Bangalore</span>
+                </div>
+                <div class="company-logo-wrapper">
+                  <img class="company-logo" src="./images/zummit.png" alt="Zummit">
+                </div>
+              </div>
+              <div class="timeline-date">Nov 2023 - Aug 2024</div>
+              <div class="timeline-description">
+                <ul>
+                  <li>Worked on migrating ML workflows of an "HR interview bot" project enhancing automated detection of candidate's nervousness and confidence based on displayed emotions.</li>
+                  <li>Led the Third Eye project, which aims to build AI-powered spectacles to assist visually impaired people where I optimized object detection using YoloV8, achieving a 20% accuracy boost.</li>
+                </ul>
+                <div class="tech-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Machine Learning</span>
+                  <span class="tech-tag">TensorFlow</span>
+                  <span class="tech-tag">PyTorch</span>
+                  <span class="tech-tag">Keras</span>
+                  <span class="tech-tag">LLMs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-title-wrapper">
+                  <h3 class="timeline-role">ML Trainee - Amazon ML Summer School</h3>
+                  <span class="timeline-company">Amazon</span>
+                </div>
+                <div class="company-logo-wrapper">
+                  <img class="company-logo" src="./images/amazon.svg" alt="Amazon">
+                </div>
+              </div>
+              <div class="timeline-date">Sept 2023 - Oct 2023</div>
+              <div class="timeline-description">
+                <ul>
+                  <li>Secured a position among the top 3000 nationwide, gaining invaluable exposure to state-of-the-art Machine Learning applications.</li>
+                  <li>Engaged in intensive workshops and training sessions conducted by accomplished data scientists currently working at Amazon.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-title-wrapper">
+                  <h3 class="timeline-role">Data Science Intern</h3>
+                  <span class="timeline-company">Codeclause, Pune</span>
+                </div>
+                <div class="company-logo-wrapper">
+                  <img class="company-logo" src="./images/codeclause.png" alt="Codeclause">
+                </div>
+              </div>
+              <div class="timeline-date">Jan 2023 - Feb 2023</div>
+              <div class="timeline-description">
+                <ul>
+                  <li>Developed a Machine Learning powered solution for predicting Churn in Telecom Industry to identify patterns and various trends that influence customer satisfaction and helps to reduce churn in telecom.</li>
+                </ul>
+                <div class="tech-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Machine Learning</span>
+                  <span class="tech-tag">Data Science</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-title-wrapper">
+                  <h3 class="timeline-role">Internship Trainee</h3>
+                  <span class="timeline-company">Marine Industrial Control & Automation Labs</span>
+                </div>
+                <div class="company-logo-wrapper">
+                  <img class="company-logo" src="./images/mica.png" alt="MICA">
+                </div>
+              </div>
+              <div class="timeline-date">Jun 2020 - Jul 2020</div>
+              <div class="timeline-description">
+                <ul>
+                  <li>Acquired comprehensive training in Python Programming and MySQL Database, skillfully applying them in a collaborative group project titled 'Database Queries'.</li>
+                </ul>
+                <div class="tech-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">MySQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       
-      <section class='skillsAndProjects'>
-        <div class='skills' id='skills'>
-          <h1 class='cardHeading'>Skills</h1>
-          <img title='Java' src='images\java-logo-1.png'>
-          <img title='Python' src='https://logodownload.org/wp-content/uploads/2019/10/python-logo.png'>
-          <!-- <img title='HTML' src='./images/html.svg'>
-          <img title='CSS' src='./images/css.svg'> -->
-          <img title='Javascript' src='./images/javascript.svg'>
-          <img title='NodeJS' src='./images/nodejs_2.svg'>
-          <img title='Express' src='./images/express.svg'>
-          <img title='NestJS' src='./images/nestjs.svg'>
-          <img title='Postman' src='./images/postman.svg'>
-          <img title='Power BI' src='./images/power-bi.svg'>
-          <img title='AI/ML' src='./images/machine-learning.png'>
-          <img title='MySQL' src='./images/mysql.png'>
-          <img title='PostgreSQL' src='./images/postgres.png'>
-          <img title='MongoDB' src='./images/mongodb.svg'>
-          <img title='AWS' src='./images/aws.svg'>
-          <img title='n8n' src='./images/n8n-color.svg'>
-          <img title='MCP(Model Context Protocol)' src='./images/mcp.svg'>
-          <img title='Ollama' src='./images/ollama.svg'>
-          <img title='Docker' src='./images/docker.svg'>
-          <img title='Git' src='./images/git.svg'>
-          
-        </div>
-        <div class='projects' id='projects'>
-          <h1 class='cardHeading'>Projects</h1>
-          <div class='projectContainer'>
-            <img src='./images/project.svg'/>
-            <div class='projectDescription'>
-              <div style="display: flex; align-items: center;">
-                <h4 style="margin: 0;">MyAptitude - Online Aptitude Exam Generation System using Web Scraping</h4>
-                <a href="https://github.com/Varadkar45/MyAptitude/">
-                    <img src="./images/expand-arrows.png" alt="External Link" style="width:28px; height:28px; margin-left:4px; margin-top:6px;"/>
-                </a>
-              </div>
-              <p>A web application designed to conduct online aptitude exams for companies aiming to eradicate paper leaks through real-time question scraping and customization.</p>
-            </div>
-          </div>
-          <div class='projectContainer'>
-            <img src='./images/project.svg'/>
-            <div class='projectDescription'>
-              <div style="display: flex; align-items: center;">
-                <h4 style="margin: 0;">LangGraph based Mutual Fund Q&A Chatbot</h4>
-                <a href="https://github.com/Varadkar45/LangGraph_based_Mutual_Fund_Q-A_Chatbot/">
-                    <img src="./images/expand-arrows.png" alt="External Link" style="width:28px; height:28px; margin-left:12px; margin-top:6px;"/>
-                </a>
-            </div>
-              <p>Built a Retrieval-Augmented Generation (RAG) chatbot to answer intra-document and inter-document queries on HDFC
-                Mutual Fund factsheets</p>
-            </div>
-          </div>
-          <div class='projectContainer'>
-            <img src='./images/project.svg'/>
-            <div class='projectDescription'>
-              <div style="display: flex; align-items: center;">
-                <h4 style="margin: 0;">Smart ATS Resume Analyzer using AI</h4>
-                <a href="https://github.com/Varadkar45/Smart-ATS-Resume-Analyzer-using-Google-Gemini-Pro-Vision-LIM-Model">
-                    <img src="./images/expand-arrows.png" alt="External Link" style="width:28px; height:28px; margin-left:12px; margin-top:6px;"/>
-                </a>
-            </div>
-              <p>An AI-powered Applicant Tracking System (ATS) designed to evaluate resumes based on job descriptions, helping candidates optimize their resumes for better ATS compatibility.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class='contactForm' id='contactForm'>
-        <h1>Get in touch!</h1>
-        <p>You can type in the details here, but unfortunately this won't work. But don't worry if I build your form that will work :)</p>
-        <div class='formGroup'>
-          <label for='name'>Enter Full Name</label><br/>
-          <input type='text' id='name' placeholder='Full Name'/>
-        </div>
-        <div class='formGroup'>
-          <label for='email'>Email</label><br/>
-          <input type='text' id='email' placeholder='Email'/>
-        </div>
-        <div class='formGroup'>
-          <label for='message'>Message</label><br/>
-          <textarea placeholder="Send some message!!" id="message" name="w3review" rows="4" cols="50"></textarea>
-        </div>
-        <button class='submitButton' onClick={submit()}>Connect</button>
-      </section>
-      <section class='FindMe'>
-        <div class='FindMe' id='FindMe'>
-          <h1 class='cardHeading'>Find me here...</h1> 
-          <a href="https://www.linkedin.com/in/shreyas-varadkar//"> <img title='linkedin' src='./images2/linkedin.svg'></a>
-          <a href="https://github.com/Varadkar45/"> <img title='github' src='./images2/github.svg'></a>
-          <a href="mailto:s.varadkar2001@gmail.com"> <img title='email' src='./images2/gmail.svg'></a>
-          <a href="https://instagram.com/__mr_varadkar__/"> <img title='instagram' src='./images2/instagram.svg'></a>
-          
+      <section class='skills' id='skills'>
+        <div class="section-header">
+          <h2 class="section-title">Skills & Technologies</h2>
+          <div class="section-line"></div>
         </div>
 
+        <!-- Programming Languages -->
+        <div class="skills-category">
+          <h3 class="category-title">Programming Languages</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <img title='Python' src='https://logodownload.org/wp-content/uploads/2019/10/python-logo.png'>
+              <span>Python</span>
+            </div>
+            <div class="skill-card">
+              <img title='Java' src='images\java-logo-1.png'>
+              <span>Java</span>
+            </div>
+            <div class="skill-card">
+              <img title='Javascript' src='./images/javascript.svg'>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend & Frameworks -->
+        <div class="skills-category">
+          <h3 class="category-title">Backend & Frameworks</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <img title='NodeJS' src='./images/nodejs_2.svg'>
+              <span>NodeJS</span>
+            </div>
+            <div class="skill-card">
+              <img title='Express' src='./images/express.svg'>
+              <span>Express</span>
+            </div>
+            <div class="skill-card">
+              <img title='NestJS' src='./images/nestjs.svg'>
+              <span>NestJS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI & Machine Learning -->
+        <div class="skills-category">
+          <h3 class="category-title">AI & Machine Learning</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <img title='AI/ML' src='./images/machine-learning.png'>
+              <span>AI/ML</span>
+            </div>
+            <div class="skill-card">
+              <img title='Ollama' src='./images/ollama.svg'>
+              <span>Ollama</span>
+            </div>
+            <div class="skill-card">
+              <img title='MCP(Model Context Protocol)' src='./images/mcp.svg'>
+              <span>MCP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skills-category">
+          <h3 class="category-title">Databases</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <img title='PostgreSQL' src='./images/postgres.png'>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="skill-card">
+              <img title='MySQL' src='./images/mysql.png'>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-card">
+              <img title='MongoDB' src='./images/mongodb.svg'>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- DevOps & Cloud -->
+        <div class="skills-category">
+          <h3 class="category-title">DevOps & Cloud</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <img title='Docker' src='./images/docker.svg'>
+              <span>Docker</span>
+            </div>
+            <div class="skill-card">
+              <img title='AWS' src='./images/aws.svg'>
+              <span>AWS</span>
+            </div>
+            <div class="skill-card">
+              <img title='Git' src='./images/git.svg'>
+              <span>Git</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Others -->
+        <div class="skills-category">
+          <h3 class="category-title">Tools & Others</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <img title='n8n' src='./images/n8n-color.svg'>
+              <span>n8n</span>
+            </div>
+            <div class="skill-card">
+              <img title='Postman' src='./images/postman.svg'>
+              <span>Postman</span>
+            </div>
+            <div class="skill-card">
+              <img title='Power BI' src='./images/power-bi.svg'>
+              <span>Power BI</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class='projects' id='projects'>
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+          <div class='project-card'>
+            <div class="project-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3>MyAptitude - Online Aptitude Exam System</h3>
+            <p>A web application designed to conduct online aptitude exams for companies aiming to eradicate paper leaks through real-time question scraping and customization.</p>
+            <div class="project-footer">
+              <a href="https://github.com/Varadkar45/MyAptitude/" class="project-link" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                View Project
+              </a>
+            </div>
+          </div>
+
+          <div class='project-card'>
+            <div class="project-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <h3>LangGraph based Mutual Fund Q&A Chatbot</h3>
+            <p>Built a Retrieval-Augmented Generation (RAG) chatbot to answer intra-document and inter-document queries on HDFC Mutual Fund factsheets.</p>
+            <div class="project-footer">
+              <a href="https://github.com/Varadkar45/LangGraph_based_Mutual_Fund_Q-A_Chatbot/" class="project-link" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                View Project
+              </a>
+            </div>
+          </div>
+
+          <div class='project-card'>
+            <div class="project-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <h3>Smart ATS Resume Analyzer using AI</h3>
+            <p>An AI-powered Applicant Tracking System (ATS) designed to evaluate resumes based on job descriptions, helping candidates optimize their resumes for better ATS compatibility.</p>
+            <div class="project-footer">
+              <a href="https://github.com/Varadkar45/Smart-ATS-Resume-Analyzer-using-Google-Gemini-Pro-Vision-LIM-Model" class="project-link" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                View Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class='contactForm' id='contactForm'>
+        <div class="section-header centered">
+          <h2 class="section-title">Get In Touch</h2>
+        </div>
+        <div class="contact-content">
+          <p class="contact-description">I'm currently looking for new opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+          <div class="contact-grid">
+            <div class='formGroup'>
+              <label for='name'>Full Name</label>
+              <input type='text' id='name' placeholder='John Doe'/>
+            </div>
+            <div class='formGroup'>
+              <label for='email'>Email Address</label>
+              <input type='email' id='email' placeholder='john@example.com'/>
+            </div>
+            <div class='formGroup full-width'>
+              <label for='message'>Message</label>
+              <textarea placeholder="Your message here..." id="message" name="message" rows="6"></textarea>
+            </div>
+          </div>
+          <button class='submitButton'>
+            <span>Send Message</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+          <p class="form-note">You can type in the details here, but unfortunately this won't work. </p>
+          <p class="form-note">But don't worry if I build your form that will work :)</p>
+        </div>
+      </section>
+
+      <section class='FindMe' id='FindMe'>
+        <h2 class="connect-title">Let's Connect</h2>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/shreyas-varadkar/" target="_blank" class="social-link">
+            <img title='LinkedIn' src='./images2/linkedin.svg'>
+          </a>
+          <a href="https://github.com/Varadkar45/" target="_blank" class="social-link">
+            <img title='GitHub' src='./images2/github.svg'>
+          </a>
+          <a href="mailto:s.varadkar2001@gmail.com" class="social-link">
+            <img title='Email' src='./images2/gmail.svg'>
+          </a>
+          <a href="https://instagram.com/__mr_varadkar__/" target="_blank" class="social-link">
+            <img title='Instagram' src='./images2/instagram.svg'>
+          </a>
+        </div>
       </section>
 
       <footer>
-        <p>&copy; 2021 Shreyas Varadkar. All rights reserved.</p>
+        <p>Designed & Built by Shreyas Varadkar</p>
+        <p>&copy; 2025 Shreyas Varadkar. All rights reserved.</p>
       </footer>
-
     </main>
 
-    
-        <!-- Load library from the CDN -->
-        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js">
-        </script>
-    
-        <!-- Setup and start animation! -->
-        <script>
-
-        window.addEventListener('load', function () {
-            const preloader = document.querySelector('.preloader');
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      window.addEventListener('load', function () {
+        const preloader = document.querySelector('.preloader');
+        setTimeout(() => {
+          preloader.style.opacity = '0';
+          setTimeout(() => {
             preloader.style.display = 'none';
+          }, 500);
+        }, 1500);
 
-            var typed = new Typed('#element', {
-                strings: ['Machine Learning', 'Full Stack Development', 'Data Science',],
-                typeSpeed: 60,
-            });
+        var typed = new Typed('#element', {
+          strings: ['Machine Learning', 'AI Development', 'Full Stack Development', 'Data Science', 'LLM Integration'],
+          typeSpeed: 60,
+          backSpeed: 40,
+          loop: true
         });
+      });
 
-        function downloadResume() {
-            const resumeURL = 'https://drive.google.com/file/d/16xgQ2rl2560TqMGvHwV5R_0RfaxFIJPX/view?usp=sharing';
-            //const resumeURL = 'https://drive.google.com/file/d/1hEqRCTutJykSZf3CWchixzKLGhdCj37W/view?usp=sharing';
-            window.open(resumeURL, '_blank');
-        }
-    
-        </script>
+      function downloadResume() {
+        const resumeURL = 'https://drive.google.com/file/d/16xgQ2rl2560TqMGvHwV5R_0RfaxFIJPX/view?usp=sharing';
+        window.open(resumeURL, '_blank');
+      }
+
+      // Smooth scroll with offset for fixed nav
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 80,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>
