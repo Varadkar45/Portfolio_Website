@@ -550,6 +550,53 @@ section {
   flex-grow: 1;
 }
 
+/* Star Cursor */
+.star-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  z-index: 9999;
+  background: radial-gradient(circle, #fff 0%, var(--primary) 50%, transparent 70%);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--primary),
+              0 0 20px var(--primary),
+              0 0 30px var(--primary);
+  transform: translate(-50%, -50%);
+  animation: starPulse 1.5s ease-in-out infinite;
+}
+
+.star-trail {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  pointer-events: none;
+  z-index: 9998;
+  background: radial-gradient(circle, #fff 0%, var(--primary) 50%, transparent 70%);
+  border-radius: 50%;
+  box-shadow: 0 0 5px var(--primary),
+              0 0 10px var(--primary);
+  transform: translate(-50%, -50%);
+}
+
+@keyframes starPulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+/* Hide default cursor */
+body, a, button, input, textarea, select {
+  cursor: none !important;
+}
+
+
+
 /* About Section */
 .about-content {
   max-width: 900px;

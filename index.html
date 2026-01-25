@@ -532,6 +532,56 @@
           }
         });
       });
+      // Star Cursor Effect
+(function() {
+  if (!window.matchMedia('(pointer: fine)').matches) return;
+
+  const cursor = document.createElement('div');
+  cursor.className = 'star-cursor';
+  document.body.appendChild(cursor);
+
+  const stars = [];
+  const starCount = 5;
+
+  for (let i = 0; i < starCount; i++) {
+    const star = document.createElement('div');
+    star.className = 'star-trail';
+    star.style.opacity = (starCount - i) / starCount * 0.6;
+    document.body.appendChild(star);
+    stars.push({ element: star, x: 0, y: 0 });
+  }
+
+  let mouseX = 0, mouseY = 0;
+  let cursorX = 0, cursorY = 0;
+
+  document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+
+  function animateCursor() {
+    cursorX += (mouseX - cursorX) * 0.15;
+    cursorY += (mouseY - cursorY) * 0.15;
+    cursor.style.left = cursorX + 'px';
+    cursor.style.top = cursorY + 'px';
+
+    let prevX = cursorX, prevY = cursorY;
+    stars.forEach((star, index) => {
+      const speed = 0.2 + (index * 0.05);
+      star.x += (prevX - star.x) * speed;
+      star.y += (prevY - star.y) * speed;
+      star.element.style.left = star.x + 'px';
+      star.element.style.top = star.y + 'px';
+      prevX = star.x;
+      prevY = star.y;
+    });
+
+    requestAnimationFrame(animateCursor);
+  }
+
+  animateCursor();
+})();
+
     </script>
   </body>
 </html>
