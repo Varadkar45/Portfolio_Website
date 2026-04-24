@@ -594,8 +594,13 @@ section {
   }
 }
 
-/* Hide default cursor */
-body, a, button, input, textarea, select {
+/* Hide default cursor only after the custom cursor is active */
+body.custom-cursor-active,
+body.custom-cursor-active a,
+body.custom-cursor-active button,
+body.custom-cursor-active input,
+body.custom-cursor-active textarea,
+body.custom-cursor-active select {
   cursor: none !important;
 }
 

@@ -572,6 +572,8 @@
 (function() {
   if (!window.matchMedia('(pointer: fine)').matches) return;
 
+  document.body.classList.add('custom-cursor-active');
+
   const cursor = document.createElement('div');
   cursor.className = 'star-cursor';
   document.body.appendChild(cursor);
