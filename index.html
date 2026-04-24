@@ -7,7 +7,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   
-  <body>
+  <body class="loading">
     <!-- preloader section -->
     <div class="preloader">
       <div class="loader-ring">
@@ -72,7 +72,7 @@
         <div class="hero-image-wrapper">
           <div class="image-border"></div>
           <div class="image-container">
-            <img class='profileImage' src='https://github.com/KaranP666/KaranP666/assets/83541879/ec7a0c4a-3386-4c8a-b98b-810fc31b9fc7'/>
+            <img class='profileImage' src='./images/profile-image.gif'/>
           </div>
         </div>
       </section>
@@ -83,7 +83,7 @@
           <div class="section-line"></div>
         </div>
         <div class="about-content">
-          <p>Hi, I’m Shreyas Varadkar, an AI Engineer focused on building RAG systems, LLM automation workflows, MCP-based integrations, and voice-enabled conversational AI.</p>
+          <p>Hi, I'm Shreyas Varadkar, an AI Engineer focused on building RAG systems, LLM automation workflows, MCP-based integrations, and voice-enabled conversational AI.</p>
           <p>I work on creating intelligent agents that combine language models with structured knowledge retrieval, vector databases, and real-time speech capabilities. My experience includes open-source LLM exploration, backend AI service development, and building scalable, production-ready AI pipelines.</p>
           <p>Selected among the top 3000 students nationwide for the prestigious Amazon ML Summer School 2023.</p>
           <p>I enjoy solving real-world problems with practical AI, experimenting with new models and techniques, and continuously improving as an engineer.</p>
@@ -112,15 +112,17 @@
               </div>
               <div class="timeline-date">May 2025 - Present</div>
               <div class="timeline-description">
-                <p>Led AI initiatives at Amplispot, building AI automation frameworks and RAG-based chatbots to optimize workflows.</p>
+                <p>Led AI initiatives at Amplispot, building automation workflows, RAG-based systems, and voice-enabled AI products to optimize internal and client-facing workflows.</p>
                 <ul>
                   <li>Designed and deployed an AI Service Framework in NestJS with Keycloak-based authentication and Kubernetes deployment, improving scalability and security across internal AI tools.</li>
-                  <li>Developed RAG chatbots improving contextual accuracy and reducing hallucinations by ~40%.</li>
+                  <li>Developed RAG chatbots and conversational AI systems, reducing hallucinations by ~40% and improving contextual accuracy.</li>
                   <li>Built a bilingual (English & Hindi) voice-based conversational AI bot for the insurance domain using ElevenLabs, Express, and HTML, enabling interactive voice journeys and personalized plan suggestions.</li>
+                  <li>Built AI-assisted template automation using OpenCV and LLMs to convert design images into Conversify-compatible JSON templates, reducing a manual 1-2 hour workflow to seconds.</li>
                 </ul>
                 <div class="tech-stack">
                   <span class="tech-tag">Python</span>
                   <span class="tech-tag">NestJS</span>
+                  <span class="tech-tag">Node.js</span>
                   <span class="tech-tag">LangChain</span>
                   <span class="tech-tag">RAG</span>
                   <span class="tech-tag">n8n</span>
@@ -131,6 +133,9 @@
                   <span class="tech-tag">DigitalOcean</span>
                   <span class="tech-tag">Conversational AI</span>
                   <span class="tech-tag">AI Agents</span>
+                  <span class="tech-tag">Keycloak</span>
+                  <span class="tech-tag">Postgres</span>
+                  <span class="tech-tag">PGVector</span>
                   <span class="tech-tag">Docker</span>
                   <span class="tech-tag">Kubernetes</span>
                   <!-- -->
@@ -424,6 +429,29 @@
           <div class='project-card'>
             <div class="project-icon">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" y1="19" x2="12" y2="22"></line>
+                <line x1="8" y1="22" x2="16" y2="22"></line>
+              </svg>
+            </div>
+            <h3>VoxRefine - Local Voice Transcription App</h3>
+            <p>A fully local transcription app that turns voice input into cleaned, searchable transcripts using faster-whisper and a local LLM, with zero cloud dependencies.</p>
+            <div class="project-footer">
+              <a href="https://github.com/Varadkar45/VoxRefine/" class="project-link" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                View Project
+              </a>
+            </div>
+          </div>
+
+          <div class='project-card'>
+            <div class="project-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                 <polyline points="14 2 14 8 20 8"></polyline>
                 <line x1="16" y1="13" x2="8" y2="13"></line>
@@ -510,8 +538,9 @@
           preloader.style.opacity = '0';
           setTimeout(() => {
             preloader.style.display = 'none';
+            document.body.classList.remove('loading');
           }, 500);
-        }, 1500);
+        }, 1200);
 
         var typed = new Typed('#element', {
           strings: ['Machine Learning', 'AI Development', 'Full Stack Development', 'Data Science', 'LLM Integration'],

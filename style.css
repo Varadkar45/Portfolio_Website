@@ -34,6 +34,10 @@ body {
   position: relative;
 }
 
+body.loading {
+  overflow: hidden;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -610,6 +614,10 @@ body, a, button, input, textarea, select {
   margin-bottom: 1.5rem;
 }
 
+.about-content p:last-child {
+  margin-bottom: 0;
+}
+
 /* Timeline */
 .timeline {
   position: relative;
@@ -985,7 +993,7 @@ body, a, button, input, textarea, select {
 /* Projects Grid */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -1074,7 +1082,7 @@ body, a, button, input, textarea, select {
   transform: translateX(5px);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .projects-grid {
     grid-template-columns: 1fr;
   }
